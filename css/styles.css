@@ -2,3 +2,52 @@ html{
     font-family: IBM Plex Mono;
 }
 
+/* Home section styling */
+.home-heading-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Blinking light animation */
+.blinking-light {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    width: 12px;
+    height: 12px;
+    background-color: #00d4aa;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 212, 170, 0.6);
+    animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 15px rgba(0, 212, 170, 0.6);
+    }
+    50% {
+        opacity: 0.3;
+        box-shadow: 0 0 5px rgba(0, 212, 170, 0.2);
+    }
+}
+
+/* Accessibility support for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .blinking-light {
+        animation: none;
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0, 212, 170, 0.4);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blinking-light {
+        right: 20px;
+        top: 15px;
+        width: 10px;
+        height: 10px;
+    }
+}

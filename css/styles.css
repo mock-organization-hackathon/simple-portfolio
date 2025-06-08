@@ -2,3 +2,34 @@ html{
     font-family: IBM Plex Mono;
 }
 
+/* Custom badge styling for skills */
+.uk-badge {
+    background-color: #1e87f0;
+    color: white;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 12px;
+}
+
+.uk-badge-secondary {
+    background-color: #666;
+}
+
+/* Enhanced project card styling */
+.uk-card-secondary {
+    transition: transform 0.2s ease;
+}
+
+.uk-card-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Social media links styling */
+a[uk-icon] {
+    transition: color 0.2s ease;
+}
+
+a[uk-icon]:hover {
+    color: #1e87f0 !important;
+}

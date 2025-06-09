@@ -65,65 +65,111 @@
 </div>
 
 <!-- Navigation Bar Mobile Ends -->
-<!-- Home -->
-<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm John Doe, a front-end web developer, <br>graphic designer, and an UI/UX designer.</h1>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
-
-
+<!-- Hero Section -->
+<section class="hero-content">
+    <div class="uk-container">
+        <h1 class="hero-title uk-light uk-text-center">I'm John Doe, a front-end web developer, <br>graphic designer, and an UI/UX designer.</h1>
+        <div class="uk-text-center">
+            <a href="#about" class="uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+        </div>
+    </div>
 </section>
 
-<!-- Home Ends -->
+<!-- Hero Section Ends -->
 <br>
 
 
 <hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
 
-<!-- About Me -->
-<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
-<!-- Change here to ur paragraph -->
-<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend posuere tortor vel lobortis. Morbi pretium in sapien non suscipit. Nam ac efficitur enim. Vestibulum accumsan erat sit amet nulla commodo, nec varius felis aliquam. Aliquam suscipit mauris lacus, at euismod purus tempor aliquam. Donec varius sem nisl. Fusce augue tortor, hendrerit at elit quis, aliquet blandit eros. Nam gravida sem velit, eu placerat nunc commodo ut. <br><br>Maecenas ultricies magna nec nisi egestas, in posuere velit tincidunt. Nam quis turpis non ligula dapibus bibendum sit amet at felis. Vestibulum ornare tempor nulla, quis sodales ex consequat vel. Morbi sollicitudin ligula eget mattis euismod. Nulla scelerisque malesuada arcu a vulputate. Phasellus ac lectus consequat, eleifend libero id, tincidunt lectus. Sed tempus gravida odio, sed semper neque aliquet imperdiet.</p>
-<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
-
-<!-- About Me Ends -->
-
-
-
-
+<!-- About Section -->
+<section id="about" class="responsive-margin-top responsive-margin-bottom">
+    <div class="uk-container">
+        <div class="about-content responsive-padding">
+            <h2 class="responsive-heading-medium uk-light uk-text-center uk-margin-bottom">About Me</h2>
+            <p class="responsive-text uk-text-center uk-margin-medium-bottom">
+                I'm a passionate developer with expertise in modern web technologies. 
+                I love creating beautiful, functional, and user-friendly applications 
+                that solve real-world problems.
+            </p>
+            <p class="responsive-text uk-text-center uk-margin-medium-bottom">
+                When I'm not coding, you can find me exploring new technologies, 
+                contributing to open source projects, or enjoying a good cup of coffee.
+            </p>
+            
+            <!-- Social Media Links -->
+            <div class="social-icons">
+                <a href="#" class="uk-light uk-button-text" uk-icon="icon: github; ratio: 1.5" title="GitHub"></a>
+                <a href="#" class="uk-light uk-button-text" uk-icon="icon: dribbble; ratio: 1.5" title="Dribbble"></a>
+                <a href="#" class="uk-light uk-button-text" uk-icon="icon: instagram; ratio: 1.5" title="Instagram"></a>
+                <a href="#" class="uk-light uk-button-text" uk-icon="icon: linkedin; ratio: 1.5" title="LinkedIn"></a>
+            </div>
+        </div>
+    </div>
 </section>
+
+<!-- About Section Ends -->
 
 <!-- Projects Section -->
 <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-<p class="uk-margin-xlarge-left">Projects that i've been working on</p>
-
-<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-    <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Project Name</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="">
-            <span uk-icon="icon: link">
-            </span> Website Link </a>
+<section id="projects" class="responsive-margin-top responsive-margin-bottom">
+    <div class="uk-container">
+        <div class="responsive-padding">
+            <h2 class="responsive-heading-medium uk-light uk-text-center uk-margin-bottom">My Projects</h2>
+            <p class="responsive-text uk-text-center uk-margin-large-bottom">
+                Here are some of the projects I've worked on recently.
+            </p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card uk-card uk-card-secondary uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">E-Commerce Platform</h3>
+                    <p class="responsive-text">A full-stack e-commerce solution built with React and Node.js, featuring user authentication, payment processing, and admin dashboard.</p>
+                    <div class="uk-margin-top">
+                        <span class="uk-label uk-margin-small-right">React</span>
+                        <span class="uk-label uk-margin-small-right">Node.js</span>
+                        <span class="uk-label uk-margin-small-right">MongoDB</span>
+                    </div>
+                    <div class="uk-margin-top">
+                        <a href="#" class="uk-button uk-button-text">View Project</a>
+                        <a href="#" class="uk-button uk-button-text">GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card uk-card uk-card-secondary uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">Task Management App</h3>
+                    <p class="responsive-text">A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                    <div class="uk-margin-top">
+                        <span class="uk-label uk-margin-small-right">Vue.js</span>
+                        <span class="uk-label uk-margin-small-right">Express</span>
+                        <span class="uk-label uk-margin-small-right">Socket.io</span>
+                    </div>
+                    <div class="uk-margin-top">
+                        <a href="#" class="uk-button uk-button-text">View Project</a>
+                        <a href="#" class="uk-button uk-button-text">GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card uk-card uk-card-secondary uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">Weather Dashboard</h3>
+                    <p class="responsive-text">A responsive weather application that provides current conditions and forecasts with interactive charts and location-based services.</p>
+                    <div class="uk-margin-top">
+                        <span class="uk-label uk-margin-small-right">JavaScript</span>
+                        <span class="uk-label uk-margin-small-right">Chart.js</span>
+                        <span class="uk-label uk-margin-small-right">API</span>
+                    </div>
+                    <div class="uk-margin-top">
+                        <a href="#" class="uk-button uk-button-text">View Project</a>
+                        <a href="#" class="uk-button uk-button-text">GitHub</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>Project Name</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="uk-button-text uk-text-decoration-none" href="">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div></div>
-
-
-
-    <br>
-
-
+    </div>
 </section>
 <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-</div>
+
 <!-- Projects Section Ends -->
     
 </body>

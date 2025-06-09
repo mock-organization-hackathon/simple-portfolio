@@ -2,3 +2,23 @@ html{
     font-family: IBM Plex Mono;
 }
 
+/* Yellow button styles */
+.yellow-button {
+    background-color: #ffd700 !important;
+    color: #333 !important;
+    border: none !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+}
+
+.yellow-button:hover {
+    background-color: #ffed4a !important;
+    color: #333 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+}
+
+.yellow-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+}

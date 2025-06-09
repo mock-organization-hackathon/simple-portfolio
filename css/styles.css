@@ -2,3 +2,43 @@ html{
     font-family: IBM Plex Mono;
 }
 
+.ascii-art {
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00;
+    white-space: pre;
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #001100;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+.rocket-art {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #ff6b35;
+    text-shadow: 0 0 3px #ff6b35;
+    white-space: pre;
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #2a0a00;
+    border: 1px solid #ff6b35;
+    border-radius: 8px;
+    animation: rocket-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes rocket-glow {
+    from {
+        box-shadow: 0 0 10px rgba(255, 107, 53, 0.3);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(255, 107, 53, 0.6);
+    }
+}

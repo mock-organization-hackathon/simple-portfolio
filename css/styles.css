@@ -2,3 +2,18 @@ html{
     font-family: IBM Plex Mono;
 }
 
+.ascii-art {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.ascii-art pre {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    letter-spacing: 0.1em;
+}

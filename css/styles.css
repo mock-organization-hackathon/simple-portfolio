@@ -1,4 +1,282 @@
-html{
-    font-family: IBM Plex Mono;
+/* Portfolio Styles - Enhanced for Mobile */
+
+/* Typography - IBM Plex Mono */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'IBM Plex Mono', monospace;
 }
 
+/* Base mobile-first improvements */
+body {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Mobile typography enhancements */
+@media (max-width: 959px) {
+    body {
+        font-size: 16px; /* Better mobile readability */
+        line-height: 1.5;
+    }
+    
+    h1, .uk-heading-large {
+        font-size: 24px !important;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+    
+    h2, .uk-heading-medium {
+        font-size: 20px !important;
+        line-height: 1.4;
+    }
+    
+    h3, .uk-heading-small {
+        font-size: 18px !important;
+        line-height: 1.4;
+    }
+    
+    p, .uk-text-default {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 16px;
+    }
+}
+
+/* Mobile margin overrides for UIKit */
+@media (max-width: 959px) {
+    /* Override UIKit's large margins on mobile */
+    .uk-margin-xlarge-left {
+        margin-left: 16px !important;
+    }
+    
+    .uk-margin-xlarge-right {
+        margin-right: 16px !important;
+    }
+    
+    .uk-margin-xlarge-top {
+        margin-top: 24px !important;
+    }
+    
+    .uk-margin-xlarge-bottom {
+        margin-bottom: 24px !important;
+    }
+    
+    .uk-margin-large {
+        margin: 16px !important;
+    }
+    
+    .uk-margin-large-top {
+        margin-top: 16px !important;
+    }
+    
+    .uk-margin-large-bottom {
+        margin-bottom: 16px !important;
+    }
+    
+    /* Container padding adjustments */
+    .uk-container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+}
+
+/* Enhanced touch targets for mobile */
+@media (max-width: 959px) {
+    /* Navigation links */
+    .uk-navbar-nav > li > a {
+        padding: 12px 16px !important;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+    
+    /* Offcanvas navigation improvements */
+    .uk-offcanvas-bar .uk-nav-default > li > a {
+        padding: 16px 20px !important;
+        min-height: 48px;
+        font-size: 18px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Button enhancements */
+    .uk-button {
+        padding: 12px 24px !important;
+        min-height: 44px;
+        font-size: 16px !important;
+    }
+    
+    /* Form elements */
+    .uk-input,
+    .uk-select,
+    .uk-textarea {
+        padding: 12px 16px !important;
+        min-height: 44px;
+        font-size: 16px !important;
+    }
+}
+
+/* UIKit card enhancements for mobile */
+@media (max-width: 959px) {
+    .uk-card {
+        margin-bottom: 20px;
+    }
+    
+    .uk-card-body {
+        padding: 20px 16px !important;
+    }
+    
+    .uk-card-header {
+        padding: 16px !important;
+    }
+    
+    .uk-card-footer {
+        padding: 16px !important;
+    }
+    
+    /* Card titles */
+    .uk-card-title {
+        font-size: 18px !important;
+        margin-bottom: 12px;
+    }
+}
+
+/* Grid system mobile adjustments */
+@media (max-width: 959px) {
+    /* Force full width on mobile for better readability */
+    .uk-child-width-1-2\@m > * {
+        width: 100% !important;
+    }
+    
+    .uk-child-width-1-3\@m > * {
+        width: 100% !important;
+    }
+    
+    /* Add spacing between stacked items */
+    .uk-grid > * {
+        margin-bottom: 20px;
+    }
+    
+    .uk-grid:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile-specific utility classes */
+@media (max-width: 959px) {
+    .mobile-center {
+        text-align: center !important;
+    }
+    
+    .mobile-full-width {
+        width: 100% !important;
+    }
+    
+    .mobile-hidden {
+        display: none !important;
+    }
+    
+    .mobile-margin-small {
+        margin: 8px !important;
+    }
+    
+    .mobile-padding-small {
+        padding: 8px !important;
+    }
+}
+
+/* Improved scrolling and performance */
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Better focus states for accessibility */
+*:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading states and animations */
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        transition: all 0.2s ease;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Print styles */
+@media print {
+    .uk-navbar,
+    .uk-offcanvas,
+    .mobile-hidden {
+        display: none !important;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    .uk-card {
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+}
+
+/* Dark mode considerations (if UIKit theme supports it) */
+@media (prefers-color-scheme: dark) {
+    .uk-card-secondary {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+}
+
+/* Landscape mobile specific adjustments */
+@media (max-width: 959px) and (orientation: landscape) {
+    .uk-navbar {
+        min-height: 50px;
+    }
+    
+    .uk-navbar-nav > li > a {
+        padding: 8px 12px !important;
+    }
+}
+
+/* Very small screens (320px and below) */
+@media (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .uk-container {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+    
+    .uk-card-body {
+        padding: 16px 12px !important;
+    }
+    
+    h1, .uk-heading-large {
+        font-size: 20px !important;
+    }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}

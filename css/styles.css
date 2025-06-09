@@ -2,3 +2,26 @@ html{
     font-family: IBM Plex Mono;
 }
 
+.pink-light {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    animation: blink-glow 2s infinite;
+    z-index: 1000;
+}
+
+@keyframes blink-glow {
+    0%, 50% {
+        opacity: 1;
+        box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
+    }
+    51%, 100% {
+        opacity: 0.3;
+        box-shadow: 0 0 5px #ff69b4;
+    }
+}
+

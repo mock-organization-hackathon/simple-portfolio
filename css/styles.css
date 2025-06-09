@@ -2,3 +2,42 @@ html{
     font-family: IBM Plex Mono;
 }
 
+/* Retro Button Styles */
+.retro-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+    background-size: 300% 300%;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 110, 0.3);
+    animation: gradient-shift 3s ease infinite;
+}
+
+.retro-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 0, 110, 0.5);
+    color: white;
+    text-decoration: none;
+}
+
+.retro-button:active {
+    transform: translateY(0);
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.retro-button-small {
+    padding: 8px 16px;
+    font-size: 14px;
+}

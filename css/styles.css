@@ -2,3 +2,16 @@ html{
     font-family: IBM Plex Mono;
 }
 
+.ascii-art pre {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .ascii-art pre {
+        font-size: 0.8rem;
+    }
+}

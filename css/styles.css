@@ -2,3 +2,95 @@ html{
     font-family: IBM Plex Mono;
 }
 
+/* Enhanced Typography */
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Social Links Styling */
+.social-link {
+    display: inline-block;
+    padding: 8px;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-link:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Button Enhancements */
+.uk-button {
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.uk-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Enhancements */
+.uk-card {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.uk-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation Enhancements */
+.uk-navbar-nav > li > a {
+    transition: all 0.3s ease;
+}
+
+.uk-navbar-nav > li > a:hover {
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.4;
+    }
+    
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus States for Accessibility */
+a:focus, button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}

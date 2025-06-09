@@ -2,3 +2,8 @@ html{
     font-family: IBM Plex Mono;
 }
 
+body {
+    background: linear-gradient(135deg, #6a0dad 0%, #4169e1 100%);
+    min-height: 100vh;
+}
+

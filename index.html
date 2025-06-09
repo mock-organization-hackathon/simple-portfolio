@@ -66,12 +66,16 @@
 
 <!-- Navigation Bar Mobile Ends -->
 <!-- Home -->
-<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm John Doe, a front-end web developer, <br>graphic designer, and an UI/UX designer.</h1>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
-
-
-</section>
+<div class="uk-container uk-container-large">
+    <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <div class="responsive-container">
+            <h1 class="uk-light uk-text-left uk-text-center@s">I'm John Doe, a front-end web developer, <br class="uk-visible@m">graphic designer, and an UI/UX designer.</h1>
+            <div class="uk-margin-top">
+                <a href="#about" class="uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+            </div>
+        </div>
+    </section>
+</div>
 
 <!-- Home Ends -->
 <br>
@@ -80,50 +84,57 @@
 <hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
 
 <!-- About Me -->
-<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
-<!-- Change here to ur paragraph -->
-<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend posuere tortor vel lobortis. Morbi pretium in sapien non suscipit. Nam ac efficitur enim. Vestibulum accumsan erat sit amet nulla commodo, nec varius felis aliquam. Aliquam suscipit mauris lacus, at euismod purus tempor aliquam. Donec varius sem nisl. Fusce augue tortor, hendrerit at elit quis, aliquet blandit eros. Nam gravida sem velit, eu placerat nunc commodo ut. <br><br>Maecenas ultricies magna nec nisi egestas, in posuere velit tincidunt. Nam quis turpis non ligula dapibus bibendum sit amet at felis. Vestibulum ornare tempor nulla, quis sodales ex consequat vel. Morbi sollicitudin ligula eget mattis euismod. Nulla scelerisque malesuada arcu a vulputate. Phasellus ac lectus consequat, eleifend libero id, tincidunt lectus. Sed tempus gravida odio, sed semper neque aliquet imperdiet.</p>
-<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
+<div class="uk-container uk-container-large">
+    <section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <div class="responsive-container">
+            <h3 class="uk-light">About Me</h3>
+            <!-- Change here to ur paragraph -->
+            <p class="uk-margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend posuere tortor vel lobortis. Morbi pretium in sapien non suscipit. Nam ac efficitur enim. Vestibulum accumsan erat sit amet nulla commodo, nec varius felis aliquam. Aliquam suscipit mauris lacus, at euismod purus tempor aliquam. Donec varius sem nisl. Fusce augue tortor, hendrerit at elit quis, aliquet blandit eros. Nam gravida sem velit, eu placerat nunc commodo ut. <br><br>Maecenas ultricies magna nec nisi egestas, in posuere velit tincidunt. Nam quis turpis non ligula dapibus bibendum sit amet at felis. Vestibulum ornare tempor nulla, quis sodales ex consequat vel. Morbi sollicitudin ligula eget mattis euismod. Nulla scelerisque malesuada arcu a vulputate. Phasellus ac lectus consequat, eleifend libero id, tincidunt lectus. Sed tempus gravida odio, sed semper neque aliquet imperdiet.</p>
+            <div class="uk-margin-top">
+                <a href="" class="uk-light uk-button-text uk-margin-small-right" uk-icon="instagram"></a>
+                <a href="" class="uk-light uk-button-text uk-margin-small-right" uk-icon="dribbble"></a>
+                <a href="" class="uk-button-text uk-light uk-margin-small-right" uk-icon="github"></a>
+                <a href="" class="uk-light uk-button-text" uk-icon="linkedin"></a>
+            </div>
+        </div>
+    </section>
+</div>
 
 <!-- About Me Ends -->
 
-
-
-
-</section>
-
 <!-- Projects Section -->
 <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-<p class="uk-margin-xlarge-left">Projects that i've been working on</p>
+<div class="uk-container uk-container-large">
+    <section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <div class="responsive-container">
+            <h3 class="uk-light">Projects</h3>
+            <p class="uk-margin-top">Projects that i've been working on</p>
 
-<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-    <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Project Name</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="">
-            <span uk-icon="icon: link">
-            </span> Website Link </a>
+            <div class="uk-margin-large-top" uk-grid>
+                <!-- Change all of this to ur projects -->
+                <div class="uk-width-1-1 uk-width-1-2@m project-card">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h4>Project Name</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="uk-button-text uk-text-decoration-none" href="">
+                            <span uk-icon="icon: link"></span> Website Link
+                        </a>
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-width-1-2@m project-card">
+                    <div class="uk-card uk-card-secondary uk-card-body">
+                        <h4>Project Name</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a class="uk-button-text uk-text-decoration-none" href="">
+                            <span uk-icon="icon: link"></span> Website Link
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>Project Name</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="uk-button-text uk-text-decoration-none" href="">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div></div>
-
-
-
-    <br>
-
-
-</section>
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    </section>
 </div>
+<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
 <!-- Projects Section Ends -->
     
 </body>

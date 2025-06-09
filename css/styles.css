@@ -2,3 +2,91 @@ html{
     font-family: IBM Plex Mono;
 }
 
+/* Fluid Typography */
+h1 {
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+h4 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.6;
+}
+
+/* Responsive spacing overrides */
+@media (max-width: 959px) {
+    .uk-margin-xlarge-left {
+        margin-left: 1rem !important;
+    }
+    
+    .uk-margin-xlarge-right {
+        margin-right: 1rem !important;
+    }
+    
+    .uk-margin-xlarge-top {
+        margin-top: 2rem !important;
+    }
+    
+    .uk-margin-xlarge-bottom {
+        margin-bottom: 2rem !important;
+    }
+}
+
+/* Mobile container padding */
+@media (max-width: 640px) {
+    .uk-margin-small-left,
+    .uk-margin-xlarge-left {
+        margin-left: 0.5rem !important;
+    }
+    
+    .uk-margin-small-right,
+    .uk-margin-xlarge-right {
+        margin-right: 0.5rem !important;
+    }
+    
+    /* Additional mobile spacing */
+    section {
+        padding: 0 0.5rem;
+    }
+}
+
+/* Touch-friendly interactive elements */
+@media (max-width: 959px) {
+    .uk-button,
+    .uk-button-text,
+    .uk-navbar-nav a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
+    
+    .uk-nav a {
+        min-height: 48px;
+        display: flex;
+        align-items: center;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Text overflow protection */
+.uk-text-break {
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+/* Mobile card improvements */
+@media (max-width: 640px) {
+    .uk-card {
+        margin-bottom: 1rem;
+    }
+}

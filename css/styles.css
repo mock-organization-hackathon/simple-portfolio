@@ -2,3 +2,10 @@ html{
     font-family: IBM Plex Mono;
 }
 
+
+.ascii-art pre {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}

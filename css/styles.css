@@ -2,3 +2,41 @@ html{
     font-family: IBM Plex Mono;
 }
 
+/* Accessibility improvements for color blind users */
+.accessible-button {
+    border: 2px solid #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+    text-decoration: underline !important;
+    font-weight: bold !important;
+    position: relative !important;
+}
+
+.accessible-button:hover {
+    border: 2px solid #cccccc !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4) !important;
+    transform: translateY(-1px) !important;
+}
+
+.accessible-button:focus {
+    outline: 3px solid #ffffff !important;
+    outline-offset: 2px !important;
+    border: 2px solid #ffffff !important;
+}
+
+/* High contrast pattern for button */
+.accessible-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 255, 255, 0.1) 2px,
+        rgba(255, 255, 255, 0.1) 4px
+    );
+    pointer-events: none;
+}

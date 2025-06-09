@@ -1,4 +1,46 @@
+/* Color blind accessibility improvements */
+.accessible-button {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: 2px solid #ffffff !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    position: relative;
+}
+
+.accessible-button:hover,
+.accessible-button:focus {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 2px solid #000000 !important;
+    outline: 3px solid #0066cc !important;
+    outline-offset: 2px;
+}
+
+.accessible-button::before {
+    content: "▶ ";
+    font-weight: bold;
+}
+
+/* High contrast focus states for all interactive elements */
+.uk-button:focus,
+a:focus {
+    outline: 3px solid #0066cc !important;
+    outline-offset: 2px;
+}
+
+/* Ensure sufficient contrast for all buttons */
+.uk-button-text {
+    text-decoration: underline !important;
+    font-weight: bold !important;
+}
+
+.uk-button-text:hover,
+.uk-button-text:focus {
+    background-color: #f0f0f0 !important;
+    color: #000000 !important;
+}
+
 html{
     font-family: IBM Plex Mono;
 }
-

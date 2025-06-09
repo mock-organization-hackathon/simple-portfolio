@@ -2,3 +2,57 @@ html{
     font-family: IBM Plex Mono;
 }
 
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.uk-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+.uk-card-title {
+    color: #fff;
+}
+
+.uk-card-body {
+    color: #fff;
+}
+
+.uk-navbar {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333;
+}
+
+.uk-navbar-nav > li > a {
+    color: #fff;
+}
+
+.uk-navbar-nav > li > a:hover {
+    color: #0f6ecd;
+}
+
+a {
+    color: #0f6ecd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4a9eff;
+    text-decoration: underline;
+}
+
+.uk-light {
+    color: #fff;
+}
+
+.uk-light .uk-card {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.uk-light .uk-navbar {
+    background-color: #1a1a1a;
+}

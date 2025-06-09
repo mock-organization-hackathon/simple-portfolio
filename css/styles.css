@@ -2,3 +2,36 @@ html{
     font-family: IBM Plex Mono;
 }
 
+.ascii-art-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.ascii-art {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    line-height: 1;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    display: inline-block;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+/* Responsive adjustments for ASCII art */
+@media (max-width: 768px) {
+    .ascii-art {
+        font-size: 0.7rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ascii-art {
+        font-size: 0.5rem;
+        padding: 0.5rem;
+    }
+}
